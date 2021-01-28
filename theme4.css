@@ -1,0 +1,18 @@
+:root{
+    --mainColor:#46344e;
+    --secColor: #382a3f;
+    --thirdColor: rgb(47, 0, 65);
+
+    --boarderColor: #1d1520;
+
+    --mainText: white;
+    --secText: #eeeeee;
+
+    --browserWindowColor: #585555;
+
+    --themeDotBorder: #white;
+
+    --previewBG: rgb(29,21,32,0.8);
+    --previewShadow: #2b202f;
+    
+}

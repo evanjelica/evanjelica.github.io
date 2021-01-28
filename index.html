@@ -12,35 +12,140 @@
     
         <link rel="stylesheet" type="text/css" href="style.css">
 
+        <link id="theme-style" rel="stylesheet" type="text/css" href="">
+
     </head>
     <body>
         <section class= "s1">
             <div class="main-container">
-                <h1>Hello there &#x2728</h1>
-                <p>This be a sentence</p>
-                <a href="#">Link</a>
+                <div class ="greeting-wrapper">
+                    <h1>Hello there &#x2728</h1>
+                </div>
+                
+                <div class="intro-wrapper">
+                    <div class ="nav-wrapper">
+                        <div class="dots-wrapper">
+                            <div id="dot-1" class="browser-dot"></div>
+                            <div id="dot-2" class="browser-dot"></div>
+                            <div id="dot-3" class="browser-dot"></div>
+                        </div>
+                        
+                        <ul id="navigation">
+                            <li><a href="index.html#contact">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class ="left-column">
+                        <img id="profile-pic" src="Pics/anjelica.jpg">
+                        <h5 style="text-align: center; line-height: 0;">Personalize Theme</h5>
+
+                        <div id="theme-options-wrapper">
+                            <div data-mode="default" id="light-mode" class="theme-dot"></div>
+                            <div data-mode="theme2"id="blue-mode" class="theme-dot"></div>
+                            <div data-mode="theme3"id="green-mode" class="theme-dot"></div>
+                            <div data-mode="theme4"id="purple-mode" class="theme-dot"></div>
+                        </div>
+
+                        <p id="settings-note">*Theme settings will be saved for<br>your next visit</p>
+
+                    </div>
+                    <div class ="right-column">
+                        <div id="preview-shadow">
+                            <div id="preview">
+                                <div id="corner-tl" class="corner"></div>
+                                <div id="corner-tr" class="corner"></div>
+                                <h3>About me</h3>
+                                <p>My name is Anjelica Avorque and I am a Junior Computer
+                                Science student at the University of Texas at Dallas!
+                                </p>
+                                <div id="corner-br" class="corner"></div>
+                                <div id="corner-bl" class="corner"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section class= "s2">
             <div class="main-container">
-                About
+                <div class="about-wrapper">
+                    <div class="about-me">
+                        <h4>More about me! &#x1F33F</h4>
+                        <p>Work</p>
+                        <p>In</p>
+                        <p>Progress</p>
+                    </div>
+
+                    <hr>
+
+                    <h4>tabula rasa</h4>
+
+                    <div class="social-links">
+
+                    </div>
+                </div>
 
             </div>
         </section>
 
         <section class= "s1">
             <div class="main-container">
-                Portfolio
+                <h3 style="text-align: center;">Some of my projects</h3>
+                <div class="post-wrapper">
+
+                    <div>
+                        <div class="post">
+                            <img class="thumbnail" src="Pics/PP-Menu-BG-cover.png">
+                            <div class="post-preview">
+                                <h6 class="post-title">Pumpkin Princess</h6>
+                                <p class="post-intro">A 2D platforner made during UTD's 2020 Halloween Hackathon. <br>&#x2728 Won Best Design category! &#x2728 </p>
+                                <a href="https://matthewsvu.itch.io/pumpkin-princess-123">Click Here to Play</a>
+                                <br><a href="post.html">See concept art</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="post">
+                            <img class="thumbnail" src="Pics/explore-cities-thumb.jpg">
+                            <div class="post-preview">
+                                <h6 class="post-title">Explore Cities</h6>
+                                <p class="post-intro">An interactive web app that allows users to input their zipcode to find nearby cities to explore!</p>
+                                <a href="https://github.com/Codubee/ExploreCitiesMW4-6">Click here</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="post">
+                            <img class="thumbnail" src="Pics/UTD-EPCS.png">
+                            <div class="post-preview">
+                                <h6 class="post-title">FACE Case Management and Reporting System</h6>
+                                <p class="post-intro">A semester long project in partnership with the nonprofit FACE</p>
+                                <a href="">Coming soon!</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
 
             </div>
         </section>
 
         <section class= "s2">
             <div class="main-container">
-                Contact Me!
-
+                <h3 style="text-align: center;">Get In Touch!</h3>
+                <a name ="contact"></a>
+                <p>Email: <a href="mailto: anjelica.avorque@gmail.com">anjelica.avorque@gmail.com</a></p>
+                <p>LinkedIn: <a href ="https://www.linkedin.com/in/anjelica-avorque/"> Anjelica Avorque</a></p>
+                <p>GitHub: <a href="https://github.com/evanjelica"> evajelica</a></p>
+                
             </div>
         </section>
+
+        <script type="text/javascript" src="themeScript.js"></script>
+
     </body>
 </html>
