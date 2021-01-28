@@ -153,8 +153,9 @@ ul{
     margin: 0 auto;
     height: 200px;
     width: 200px;
+    border-radius: 50%;
     object-fit: cover;
-    border:2px solid var(--boarderColor);
+    border:2px solid var(--linkText);
 }
 
 #theme-options-wrapper{
