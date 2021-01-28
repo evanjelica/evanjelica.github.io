@@ -6,7 +6,8 @@
     --boarderColor: #c1c1c1;
 
     --mainText: black;
-    --secText: #5c5c5c;
+    --secText: #333333;
+    --linkText: #fc6058;
 
     --browserWindowColor: #eaeaea;
 
@@ -35,12 +36,12 @@ h2, h3, h4, h5, h6, strong{
     font-family: 'Source Sans Pro', sans-serif;
     font-style: italic;
 }
-p, li, span, label, input, textarea, a{
+p, li, span, label, input, textarea{
     color: var(--secText);
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-h1{font-size: 56px;}
+h1{font-size: 60px;}
 h2{font-size: 36px;}
 h3{font-size: 28px;}
 h4{font-size: 24px;}
@@ -48,8 +49,9 @@ h5{font-size: 20px;}
 h6{font-size: 16px;}
 
 a{
+    font-family: 'Source Sans Pro', sans-serif;
     text-decoration: none;
-    color: #17a2b8;
+    color: var(--linkText);
 }
 
 ul{
@@ -79,8 +81,8 @@ ul{
 
     justify-content: center;
     align-content: center;
-    border: 2px ;
-    min-height: 10em;
+    border: 1px ;
+    min-height: 3em;
 }
 
 .intro-wrapper{
@@ -201,10 +203,9 @@ ul{
 .right-column{
     grid-area: right-column;
     display: grid;
-    align-content: center;
-
-    padding-top: 50px;
-    padding-bottom: 50px;
+  
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 #preview-shadow{
@@ -217,7 +218,7 @@ ul{
 
 #preview{
     width: 300px;
-    border: 1.5px solid #17a2b8;
+    border: 1.5px solid var(--linkText);
     background-color: var(--previewBG);
     padding: 15px;
 }
@@ -226,26 +227,32 @@ ul{
     width: 7px;
     height: 7px;
     border-radius: 50%;
-    border: 1.5px solid #17a2b8;
+    border: 1.5px solid var(--linkText);
     background-color: white;
     position: relative;
 }
 
 #corner-tl{
-    top: -5px;
-    left: -5px;
+    top: -20px;
+    left: -20px;
 }
 #corner-tr{
-    top: -5px;
-    right: -5px;
+    top: -30px;
+    right: -310px;
 }
 #corner-bl{
-    bottom: -5px;
-    left: -5px;
+    bottom: -20px;
+    left: -20px;
 }
 #corner-br{
-    bottom: -5px;
-    right: -5px;
+    bottom: -30px;
+    right: -310px;
+}
+
+.resume{
+    width: 820px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .post-wrapper{
