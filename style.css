@@ -11,8 +11,6 @@
 
     --browserWindowColor: #eaeaea;
 
-    --themeDotBorder: #24292e;
-
     --previewBG: rgb(251,249,243,0.8);
     --previewShadow: #f0ead6;
 
@@ -109,6 +107,7 @@ ul{
     align-items: center;
     background-color: var(--browserWindowColor);
 }
+
 
 #navigation{
     margin: 0;
