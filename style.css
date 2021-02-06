@@ -38,6 +38,10 @@ p, li, span, label, input, textarea{
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+hr{
+    color: var(--linkText);
+}
+
 h1{font-size: 60px;}
 h2{font-size: 36px;}
 h3{font-size: 28px;}
@@ -57,14 +61,14 @@ ul{
 
 .s1{
     background-color: var(--mainColor);
-    border-bottom: 1px solid var(--boarderColor);
+    border-bottom: 1px solid var(--linkText);
     overflow: auto;
     padding-bottom: 50px;
 }
 
 .s2{
     background-color: var(--secColor);
-    border-bottom: 1px solid var(--boarderColor);
+    border-bottom: 1px solid var(--linkText);
     overflow: auto;
 }
 
@@ -264,6 +268,50 @@ ul{
 #corner-br{
     bottom: -30px;
     right: -310px;
+}
+
+.about-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    padding-top: 50px;
+    padding-bottom: 50px;
+    gap: 100px;
+    font-size: large;
+}
+
+.topButton{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 100;
+    opacity: 0;
+
+    border: none;
+    border-radius: 50%;
+    background-color: var(--linkText);
+    color: var(--mainText);
+    cursor: pointer;
+    padding: 15px;
+    font-size: 15px;
+
+    transform: translateY(100px);
+    transition: all .5 ease;
+}
+
+.showButton{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.graphics-porfolio{
+    display: grid;
+    align-content: center;
+    text-align: center;
+}
+
+#graphics-porf{
+    border: 5px solid var(--linkText);
+    width:100%;
 }
 
 .resume{
