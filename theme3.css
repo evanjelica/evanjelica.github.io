@@ -1,17 +1,18 @@
 :root{
-    --mainColor:#ffecd9;
-    --secColor: #ffd1c1;
-    --thirdColor: white;
+    --mainColor:#15202b;
+    --secColor: #192734;
+    --thirdColor: rgb(21, 27, 59) ;
 
-    --boarderColor: #c1c1c1;
+    --boarderColor: #161914;
 
-    --mainText: black;
-    --secText: #333333;
-    --linkText: #fc6058;
+    --mainText: white;
+    --secText: #eeeeee;
+    --linkText: #15ac9f;
 
-    --browserWindowColor: #eaeaea;
+    --navbarColor: #383737;
+    --browserWindowColor: #383737;
 
-    --previewBG: rgb(251,249,243,0.8);
-    --previewShadow: #f0ead6;
-    
+    --previewBG: rgb(25,39,52,0.8);
+    --previewShadow: #111921;
+
 }
