@@ -107,10 +107,8 @@ ul{
     width: auto;
     top: 0;
 
-
-    background-color: var(--navbarColor);
-    border-bottom: 1px solid var(--boarderColor);
-/*
+    background-color: var(--mainColor);
+   /* border-bottom: 1px solid var(--boarderColor);
     position: sticky;
    -webkit-box-shadow: 0px 0px 33px 5px rgba(0,0,0,0.42); 
     box-shadow: 0px 0px 33px 5px rgba(0,0,0,0.42);
