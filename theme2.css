@@ -12,7 +12,7 @@
     --navbarColor: white;
     --browserWindowColor: #eaeaea;
 
-    --previewBG: rgb(251,249,243,0.8);
-    --previewShadow: #f0ead6;
+    --previewBG: rgba(255, 247, 225, 0.8);
+    --previewShadow: #ffecae;
     
 }
