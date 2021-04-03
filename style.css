@@ -170,7 +170,7 @@ ul{
 .left-column{
     grid-area: left-column;
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
 }
 
 #profile-pic{
@@ -196,10 +196,10 @@ ul{
 
     margin: 5px;
     border: 2px solid var(--linkText);
-
+/*
     -webkit-box-shadow: -9px 9px 27px -4px rgba(0,0,0,0.3); 
     box-shadow: -9px 9px 27px -4px rgba(0,0,0,0.3);
-
+*/
     cursor: pointer;
 }
 
