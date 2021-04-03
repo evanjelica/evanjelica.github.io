@@ -15,6 +15,8 @@
     --previewBG: rgba(243, 247, 251, 0.8);
     --previewShadow: #d6dff0;
 
+    --postColor: white;
+
 }
 html, body{
     padding: 0;
@@ -55,6 +57,7 @@ a{
     text-decoration: none;
     color: var(--linkText);
 }
+
 
 ul{
     list-style: none;
@@ -105,9 +108,9 @@ ul{
 
 .nav-bar{
     width: auto;
-    top: 0;
-
+    top: 10px;
     background-color: var(--mainColor);
+
    /* border-bottom: 1px solid var(--boarderColor);
     position: sticky;
    -webkit-box-shadow: 0px 0px 33px 5px rgba(0,0,0,0.42); 
@@ -340,27 +343,28 @@ ul{
 .thumbnail{
     display: block;
     width: 100%;
-    height: 250px;
+    height: 300px;
     object-fit: cover;
 }
 
 .post-preview{
-    background-color: white;
-    padding: 15px;
+    background-color: var(--postColor);
+    padding: 25px;
 }
 
 .post-title{
-    color: black;
-    margin:0;
+    color: var(--mainText);
+    margin:0px;
 }
 .post-intro{
-    color: black;
+    color: var(--secText);
     font-size: 16px;
 }
 
 @media screen and (max-width: 1200px){
     .main-container{
         width:95%;
+        
     }
 }
 
@@ -370,11 +374,16 @@ ul{
         grid-template-areas: 
             'nav-wrapper'
             'left-column'
-             'right-column'
+            'right-column'
         ;
     }
 
     .right-column{
         justify-content: center;
+    }
+
+    .resume-pdf{
+        height: 620px;
+        width: 400px;
     }
 }
