@@ -1,18 +1,18 @@
 :root{
-    --mainColor:#ffecd9;
-    --secColor: #ffd1c1;
+    --mainColor:#d9f0ff;
+    --secColor: #c1ebff;
     --thirdColor: white;
 
     --boarderColor: #c1c1c1;
 
     --mainText: black;
     --secText: #333333;
-    --linkText: #fc6058;
+    --linkText: #1786c7;
 
     --browserWindowColor: #eaeaea;
 
-    --previewBG: rgb(251,249,243,0.8);
-    --previewShadow: #f0ead6;
+    --previewBG: rgba(243, 247, 251, 0.8);
+    --previewShadow: #d6dff0;
 
 }
 html, body{
@@ -203,13 +203,13 @@ ul{
 }
 
 #light-mode{
-    background-color: #ffd1c1;
+    background-color: #c1ebff;
 }
 #blue-mode{
     background-color: #192734;
 }
-#green-mode{
-    background-color: #78866b;
+#peach-mode{
+    background-color: #ffd1c1;
 }
 #purple-mode{
     background-color: #7e4c74;
