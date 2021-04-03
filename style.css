@@ -65,14 +65,14 @@ ul{
 
 .s1{
     background-color: var(--mainColor);
-    border-bottom: 1px solid var(--linkText);
+  /*  border-bottom: 1px solid var(--linkText);*/
     overflow: auto;
     padding-bottom: 50px;
 }
 
 .s2{
     background-color: var(--secColor);
-    border-bottom: 1px solid var(--linkText);
+    /*border-bottom: 1px solid var(--linkText);*/
     overflow: auto;
 }
 
