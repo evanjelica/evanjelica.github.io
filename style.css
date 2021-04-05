@@ -284,6 +284,23 @@ ul{
     gap: 100px;
     font-size: large;
 }
+.contact{
+    display: block;
+    justify-content: center;
+}
+button{
+    background-color: var(--previewShadow);
+    color: var(--secText);
+    padding: 14px 20px;
+    margin: 15px 0;
+    border: none;
+    border-radius: 25px;
+    font-size: 17px;
+}
+button:hover {
+    opacity: 0.8;
+    transform: scale(0.9);
+  }
 
 .topButton{
     position: fixed;
@@ -314,10 +331,19 @@ ul{
     align-content: center;
     text-align: center;
 }
-
 #graphics-porf{
     border: 5px solid var(--linkText);
     width:100%;
+}
+.art-button{
+    background-color: var(--mainText);
+    color: var(--thirdColor);
+    padding: 14px 20px;
+    margin: 15px 0;
+    border: none;
+    border-radius: 25px;
+    width: 100%;
+    font-size: 17px;
 }
 
 .resume{
