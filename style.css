@@ -303,10 +303,22 @@ ul{
     font-size: large;
 }
 .contact{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
 }
 .contact-button{
+    display: flex;
+}
+.contact-button > button:not(:last-child){
+    margin-right: 8px;
+}
+button:hover {
+    opacity: 0.8;
+    transform: scale(0.9);
+  }
+  button{
     background-color: var(--previewShadow);
     color: var(--secText);
     padding: 14px 20px;
@@ -315,10 +327,6 @@ ul{
     border-radius: 25px;
     font-size: 17px;
 }
-.contact-button:hover {
-    opacity: 0.8;
-    transform: scale(0.9);
-  }
 
 .topButton{
     position: fixed;
@@ -338,16 +346,17 @@ ul{
     transform: translateY(100px);
     transition: all .5 ease;
 }
-
 .showButton{
     opacity: 1;
     transform: translateY(0);
 }
 
 .graphics-porfolio{
-    display: grid;
-    align-content: center;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: column;
+    align-items: center;
+    justify-content: center;
 }
 #graphics-porf{
     border: 5px solid var(--linkText);
@@ -360,7 +369,8 @@ ul{
     margin: 15px 0;
     border: none;
     border-radius: 25px;
-    width: 100%;
+    width: 300px;
+    max-width: 100%;
     font-size: 17px;
 }
 
