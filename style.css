@@ -306,7 +306,7 @@ ul{
     display: block;
     justify-content: center;
 }
-button{
+.contact-button{
     background-color: var(--previewShadow);
     color: var(--secText);
     padding: 14px 20px;
@@ -315,7 +315,7 @@ button{
     border-radius: 25px;
     font-size: 17px;
 }
-button:hover {
+.contact-button:hover {
     opacity: 0.8;
     transform: scale(0.9);
   }
