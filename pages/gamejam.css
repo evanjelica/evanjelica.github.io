@@ -65,94 +65,50 @@
     font-size: 30px;
 }
 
-.welcome-container{
+h6{
+    font-size: 15px;
+}
+
+p{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.gameplay-container{
+    display:flex;
+    object-fit: contain;
+}
+.character-sheet{
+    max-width: 1000px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.pumpkin-gif{
+    object-fit: contain;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 380px;
+    max-width: 100px;
+    width: 100%;
 }
+.enemies-gifs{
+    max-width: 300px;
+    width: 100%;
+    display: flex;
 
-
-.art-container{
-    position: relative;
-    column-count: 4;
-    padding: 10px;
 }
-
-.art{
+.enemy{
     display: inline-block;
     overflow: hidden;
-    border-radius: 15px;
-}
-.art:hover img{
-    transform: scale(1.1);
 }
 
 img{
     width: 100%;
-    transition: 0.25s ease-in-out;
-}
-
-h4{
-    position: absolute;
-    padding: 5px;
-    margin: 5px;
-    font-size: 15px;
-    background: rgb(163, 80, 115);
-    color: white;
-    border-radius: 5px;
-    opacity: 0;
-    z-index: 1;
-    transition: 0.25 ease-in-out;
-}
-.art:hover h4{
-    opacity: 0.9;
+    height: 100%;
 }
 
 footer{
-    background-color: #ffd1c1;
+    background-color: #ffcb98;
     overflow: auto;
-}
-
-/* Screen responsiveness */
-@media screen and (max-width:1024px){
-    h4{
-        font-size: 20px;
-    }
-}
-
-@media screen and (max-width:768px){
-    .art-container{
-        column-count: 3;
-    }
-    h4{
-        font-size: 13px;
-    }
-    .welcome-container{
-        width: 340px;
-    }
-}
-
-@media screen and (max-width:425px){
-    .art-container{
-        column-count: 2;
-    }
-    h4{
-        font-size: 12px;
-    }
-    .welcome-container{
-        width: 300px;
-    }
-}
-
-@media screen and (max-width:375px){
-    .art-container{
-        column-count: 1;
-    }
-    h4{
-        font-size: 14px;
-    }
-    .welcome-container{
-        width: 270px;
-    }
 }
