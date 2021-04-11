@@ -100,7 +100,7 @@ h4{
     font-size: 15px;
     background: rgb(163, 80, 115);
     color: white;
-    border-radius: 5px;
+    border-radius: 15px;
     opacity: 0;
     z-index: 1;
     transition: 0.25 ease-in-out;
