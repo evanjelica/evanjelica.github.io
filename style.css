@@ -58,7 +58,6 @@ a{
     color: var(--linkText);
 }
 
-
 ul{
     list-style: none;
 }
@@ -81,15 +80,14 @@ ul{
     margin: 0 auto;
 }
 
-.greeting-wrapper{
+/* Greeting */
+.greeting{
     display: grid;
-
     justify-content: center;
     align-content: center;
     border: 1px ;
     min-height: 3em;
 }
-
 /* Hand wave Animation*/
 .wave{
     animation-name: wave-animation;
@@ -109,7 +107,7 @@ ul{
     100% {transform: rotate(-8deg)}
 }
 
-.intro-wrapper{
+.intro-window{
     background-color: var(--thirdColor);
     border: 1px solid var(--boarderColor);
     border-radius: 5px 5px 0 0;
@@ -120,50 +118,43 @@ ul{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
-        'nav-wrapper nav-wrapper'
+        'browser-window browser-window'
         'left-column right-column'
     ;
 }
 
 /* Navbar-below*/
-.nav-bar{
+.navbar{
     width: auto;
     top: 10px;
     background-color: var(--mainColor);
-
-   /* border-bottom: 1px solid var(--boarderColor);
-    position: sticky;
-   -webkit-box-shadow: 0px 0px 33px 5px rgba(0,0,0,0.42); 
-    box-shadow: 0px 0px 33px 5px rgba(0,0,0,0.42);
-    */
 }
-.nav-bar a{
+.navbar a{
     float: left;
     display: block;
     color: var(--linkText);
     padding-left: 15px;
 }
-.nav-wrapper{
+/* Navbar-above */
+
+.browser-window{
     border-radius: 5px 5px 0 0;
-    grid-area: nav-wrapper;
+    grid-area: browser-window;
     border-bottom: 1px solid var(--boarderColor);
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: var(--browserWindowColor);
 }
-
 #navigation{
     margin: 0;
     padding: 10px;
 }
-
 #navigation li{
     display: inline-block;
     margin-right: 5px;
     margin-left: 5px;
 }
-
 .dots-wrapper{
     display: flex;
     padding: 10px;
@@ -182,7 +173,7 @@ ul{
     -webkit-box-shadow: -9px 9px 27px -4px rgba(0,0,0,0.3); 
     box-shadow: -9px 9px 27px -4px rgba(0,0,0,0.3);
 }
-/* Navbar-above */
+
 
 /* Left side of intro window*/
 .left-column{
@@ -190,7 +181,6 @@ ul{
     padding-top: 50px;
     padding-bottom: 20px;
 }
-
 #profile-pic{
     display: block;
     margin: 0 auto;
@@ -200,7 +190,6 @@ ul{
     object-fit: cover;
     border:3px solid var(--linkText);
 }
-
 #theme-options-wrapper{
     display: flex;
     justify-content: center;
@@ -232,7 +221,6 @@ ul{
 #purple-mode{
     background-color: #7e4c74;
 }
-
 #settings-note{
     font-size: 12px;
     font-style: italic;
@@ -247,7 +235,6 @@ ul{
     padding-top: 30px;
     padding-bottom: 30px;
 }
-
 #preview-shadow{
     background-color: var(--previewShadow);
     width: 300px;
@@ -261,7 +248,6 @@ ul{
     background-color: var(--previewBG);
     padding: 15px;
 }
-
 .about-wrapper{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -270,7 +256,6 @@ ul{
     gap: 100px;
     font-size: large;
 }
-
 .contact{
     display: flex;
     flex-direction: column;
@@ -297,6 +282,7 @@ button{
     font-size: 17px;
 }
 
+/* Scroll to top button */
 .topButton{
     position: fixed;
     bottom: 30px;
@@ -352,13 +338,11 @@ button{
     justify-content: center;
     padding-bottom: 50px;
 }
-
 .post{
     border: 1px solid var(--boarderColor);
     -webkit-box-shadow: -9px 9px 27px -4px rgba(0,0,0,0.3); 
     box-shadow: -9px 9px 27px -4px rgba(49, 46, 46, 0.3);
 }
-
 .thumbnail{
     display: block;
     width: 100%;
@@ -369,7 +353,6 @@ button{
     background-color: var(--postColor);
     padding: 25px;
 }
-
 .post-title{
     color: var(--mainText);
     margin:0px;
@@ -386,12 +369,11 @@ button{
         
     }
 }
-
 @media screen and (max-width: 800px){
     .intro-wrapper{
         grid-template-columns: 1fr;
         grid-template-areas: 
-            'nav-wrapper'
+            'browser-window'
             'left-column'
             'right-column'
         ;
