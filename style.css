@@ -291,12 +291,15 @@ button{
     opacity: 0;
 
     border: none;
-    border-radius: 50%;
+    border-radius: 15px;
     background-color: var(--linkText);
     color: var(--mainText);
     cursor: pointer;
     padding: 15px;
-    font-size: 15px;
+    font-size: 13px;
+
+    -webkit-box-shadow: -9px 9px 27px -4px rgba(0,0,0,0.3); 
+    box-shadow: -9px 9px 27px -4px rgba(0,0,0,0.3);
 
     transform: translateY(100px);
     transition: all .5 ease;
