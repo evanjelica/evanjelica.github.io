@@ -80,7 +80,9 @@ ul{
     margin: 0 auto;
 }
 
-/* Greeting */
+/*----------------------------------------------
+        Greeting
+----------------------------------------------*/
 .greeting{
     display: grid;
     justify-content: center;
@@ -123,7 +125,9 @@ ul{
     ;
 }
 
-/* Navbar-below*/
+/*----------------------------------------------
+        Navbar
+----------------------------------------------*/
 .navbar{
     width: auto;
     top: 10px;
@@ -135,8 +139,10 @@ ul{
     color: var(--linkText);
     padding-left: 15px;
 }
-/* Navbar-above */
 
+/*----------------------------------------------
+        iOS Browser Window
+----------------------------------------------*/
 .browser-window{
     border-radius: 5px 5px 0 0;
     grid-area: browser-window;
@@ -175,7 +181,9 @@ ul{
 }
 
 
-/* Left side of intro window*/
+/*----------------------------------------------
+        Left side of browser
+----------------------------------------------*/
 .left-column{
     grid-area: left-column;
     padding-top: 50px;
@@ -227,7 +235,9 @@ ul{
     text-align: center;
 }
 
-/* Right side of intro window */
+/*----------------------------------------------
+        Right side of broswer
+----------------------------------------------*/
 .right-column{
     grid-area: right-column;
     display: grid;
@@ -282,7 +292,9 @@ button{
     font-size: 17px;
 }
 
-/* Scroll to top button */
+/*----------------------------------------------
+        Scroll to Top Button
+----------------------------------------------*/
 .topButton{
     position: fixed;
     bottom: 30px;
@@ -309,7 +321,9 @@ button{
     transform: translateY(0);
 }
 
-/* Graphics portfolio in About */
+/*----------------------------------------------
+        Graphics Portfolio
+----------------------------------------------*/
 .graphics-porfolio{
     display: flex;
     flex-direction: column;
@@ -322,8 +336,8 @@ button{
     width:100%;
 }
 .art-button{
-    background-color: var(--mainText);
-    color: var(--thirdColor);
+    background-color: var(--linkText);
+    color: var(--mainText);
     padding: 14px 20px;
     margin: 15px 0;
     border: none;
@@ -333,7 +347,9 @@ button{
     font-size: 17px;
 }
 
-/* Projecsts section */
+/*----------------------------------------------
+        Projects Section
+----------------------------------------------*/
 .post-wrapper{
     display: grid;
     grid-template-columns: repeat(auto-fit, 320px);
@@ -365,11 +381,12 @@ button{
     font-size: 16px;
 }
 
-/* Screen Responsiveness */
+/*----------------------------------------------
+        Screen Responsiveness
+----------------------------------------------*/
 @media screen and (max-width: 1200px){
     .main-container{
         width:95%;
-        
     }
 }
 @media screen and (max-width: 800px){
