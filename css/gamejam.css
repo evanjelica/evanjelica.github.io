@@ -4,7 +4,9 @@
     text-decoration: none;
 }
 
-/* Navbar start*/
+/*----------------------------------------------
+        Navbar
+----------------------------------------------*/
 .nav-bar{
     width: auto;
     top: 10px;
@@ -56,9 +58,11 @@
     -webkit-box-shadow: -9px 9px 27px -4px rgba(0,0,0,0.3); 
     box-shadow: -9px 9px 27px -4px rgba(0,0,0,0.3);
 }
-/* Navbar end */
 
-/* Scroll to top button */
+
+/*----------------------------------------------
+        Scroll to Top
+----------------------------------------------*/
 .topButton{
     position: fixed;
     bottom: 30px;
@@ -131,6 +135,10 @@ p{
     margin-right: auto;
     box-sizing: border-box;
 }
+
+/*----------------------------------------------
+        Screen Responsiveness
+----------------------------------------------*/
 @media screen and (max-width: 700px) {
     .column {
       width: 100%;

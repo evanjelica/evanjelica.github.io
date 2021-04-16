@@ -59,7 +59,7 @@
     -webkit-box-shadow: -9px 9px 27px -4px rgba(0,0,0,0.3); 
     box-shadow: -9px 9px 27px -4px rgba(0,0,0,0.3);
 }
-/* Navbar end */
+
 
 /*----------------------------------------------
         Scroll to Top
@@ -142,7 +142,9 @@ h4{
 }
 
 
-/* Screen responsiveness */
+/*----------------------------------------------
+        Screen Responsiveness
+----------------------------------------------*/
 @media screen and (max-width:1024px){
     h4{
         font-size: 20px;
