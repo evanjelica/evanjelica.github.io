@@ -20,6 +20,26 @@
     --background-filter-blur: blur(5px);
 }
 
+/*----------------------
+    Handwave animation
+------------------------*/
+.wave{
+    animation-name: wave-animation;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+}
+@keyframes wave-animation{
+    0% {transform: rotate(0.0deg)}
+    10% {transform: rotate(14.0deg)}
+    20% {transform: rotate(-8.0deg)}
+    30% {transform: rotate(14.0deg)}
+    40% {transform: rotate(-4.0deg)}
+    50% {transform: rotate(10.0deg)}
+    60% {transform: rotate(-0.0deg)}
+    100% {transform: rotate(-8deg)}
+}
 
 /*----------------------
     Global Styling
@@ -40,6 +60,7 @@ body{
     min-height: 100vh;
     background-image: linear-gradient(to bottom right, 
     var(--pastel-pink), var(--pastel-blue));
+    background-attachment: fixed;
 
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
@@ -101,6 +122,24 @@ section{
 .align-items-center{
     align-items: center;
 }
+.sec-padding{
+    padding: 80px 0;
+}
+
+
+/*----------------------
+    Section Title
+------------------------*/
+.section-title{
+    padding: 0 15px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.section-title h2{
+    font-size: 40px;
+
+}
 
 
 /*----------------------
@@ -143,6 +182,10 @@ section{
     color: var(--white);
 }
 
+.button-tab{
+    font-family: inherit;
+    user-select: none;
+}
 
 /*----------------------
     Custom Scrollbar
@@ -194,4 +237,149 @@ section{
 .landing-img .img-box img{
     width: 100%;
     border-radius: 50%;
+}
+
+
+/*----------------------
+    About Section
+------------------------*/
+.about-img{
+    width: 50%;
+    padding: 0 15px;
+}
+.about-text{
+    width: 50%;
+    padding: 0 15px;
+}
+.about-img .img-box{
+    max-width: 400px;
+    border-radius: 50%;
+    border: 8px solid var(--white-alpha-25);
+    margin: auto;
+}
+.about-img .img-box img{
+    width: 100%;
+    border-radius: 50%;
+}
+.about-text h3{
+    font-size: 20px;
+    margin: 20px 0;
+}
+.about-text .skills{
+    display: flex;
+    flex-wrap: wrap;
+}
+.about-text .skill-item{
+    background-color: var(--white-alpha-25);
+    border: 1px solid var(--white-alpha-40);
+    padding: 5px 15px;
+    margin: 0 10px 10px 0;
+    border-radius: 20px;
+}
+
+/*** Tabs ***/
+.about-tabs{
+    margin-top: 20px;
+}
+.about-tabs .tab-items{
+    padding: 2px 0;
+    background-color: transparent;
+    border: none;
+    display: inline-block;
+    color: var(--blue-dark);
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    margin: 0 30px 0 0;
+    position: relative;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
+.about-tabs .tab-items:last-child{
+    margin: 0;
+}
+.about-tabs .tab-items::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 1px;
+    background-color: var(--blue-dark);
+    transition: width 0.3s ease;
+}
+.about-tabs .tab-items:hover::before{
+    width: 100%;
+}
+.about-tabs .tab-items.active::before{
+    width: 100%;
+    background-color: var(--main-color);
+}
+.about-tabs .tab-items.active{
+    color: var(--main-color);
+    opacity: 1;
+    cursor: auto;
+}
+.about-text .tab-content{
+    padding: 40px;
+}
+
+/*** Timeline ***/
+.about-text .timeline{
+    position: relative;
+}
+.about-text .timeline::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    top: 0;
+    left: 5px;
+    background-color: var(--main-color);
+}
+.about-text .tab-content{
+    padding: 40px 0;
+    display: none;
+}
+.about-text .tab-content.active{
+    display: block;
+}
+
+.about-text .timeline-item{
+    margin-bottom: 30px;
+    position: relative;
+    padding: 10px 0 0 40px;
+}
+.about-text .timeline-item::before{
+    content: '';
+    position: absolute;
+    height: 11px;
+    width: 11px;
+    background-color: var(--main-color);
+    left: 0;
+    top: 16px;
+    border-radius: 50%;
+}
+.about-text .timeline-item:last-child{
+    margin-bottom: 0;
+}
+
+.about-text .timeline-item .date{
+    display: block;
+    color: var(--main-color);
+    font-weight: 400;
+    margin: 0 0 5px;
+}
+.about-text .timeline-item h4{
+    font-size: 20px;
+    margin: 0 0 5px;
+}
+.about-text .timeline-item h5{
+    font-size: 16px;
+    margin: 0 0 5px;
+    font-weight: 600;
+}
+
+.about-text .button{
+    margin: 0 15px 15px 0;
 }
