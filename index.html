@@ -14,235 +14,56 @@
     <link rel="manifest" href="/site.webmanifest">
 
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
 
     <!-- Stylesheet -->
     <link rel="stylesheet" type="text/css" href="./css/index.css">
     <link id="theme-style" rel="stylesheet" type="text/css" href="">
 
-    <!-- Hamburger icon for responsive navbar -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
 <body>
 
-    <!--Responsive Nav Bar-->
-    <div class="navbar">
-        <ul id="navigation">
-            <li style="font-weight: bolder;"><a target="_blank" href="Anjelica_Avorque_Resume.pdf">&#x2b50 Resume</a>
-            </li>
-            <li style="font-weight: bolder;"><a href="index.html#aboutme">&#x1F33F About</a></li>
-            <li style="font-weight: bolder;"><a href="index.html#projects">&#x1F538 Projects</a></li>
-            <li style="font-weight: bolder;"><a href="pages/art.html">&#x1F539 Personal Art</a></li>
-            <li style="font-weight: bolder;"><a href="pages/gamejam.html">&#x1F383 GameJam Concept Art</a></li>
-        </ul>
+    <div class="main">
+
+        <!--Landing-begin-->
+        <section class="landing align-items-center">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="landing-text">
+                        <p>Hello I'm</p>
+                        <h1>Anjelica</h1>
+                        <h2>A Computer Science major and </br>a UI/UX Design enthusiast</h2>
+                        <a href ="#" class="button">about me</a>
+                        <a href ="#" class="button">projects</a>
+                    </div>
+                    <div class="landing-img">
+                        <div class="img-box">
+                            <img src ="pics/anjelica.jpg" alt="It me">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Landing-end-->
+
+        <!--About-begin-->
+        <section class="about sec-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title">
+                        <h2>About Me</h2>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <!--About-end-->
+
     </div>
 
-
-    <!--Scroll to top button-->
-    <button class="topButton" title="Go to top">&#x261D UP</button>
-
-    <!--Greeting-->
-    <section class="s1">
-        <div class="main-container">
-            <div class="greeting">
-                <h1>Hi <span class="wave">&#x1F44B</span></h1>
-            </div>
-
-            <div class="intro-window">
-                <div class="browser-window">
-                    <div class="dots-wrapper">
-                        <div id="dot-1" class="browser-dot"></div>
-                        <div id="dot-2" class="browser-dot"></div>
-                        <div id="dot-3" class="browser-dot"></div>
-                    </div>
-                </div>
-
-                <div class="left-column">
-                    <img id="profile-pic" src="./pics/anjelica.jpg">
-                    <h5 style="text-align: center; line-height: 0; font-style: italic;">Personalize Theme &#x1F3A8</h5>
-
-                    <div id="theme-options-wrapper">
-                        <div data-mode="default" id="light-mode" class="theme-dot"></div>
-                        <div data-mode="theme2" id="peach-mode" class="theme-dot"></div>
-                        <div data-mode="theme3" id="blue-mode" class="theme-dot"></div>
-                        <div data-mode="theme4" id="purple-mode" class="theme-dot"></div>
-                    </div>
-                    <p id="settings-note">*Theme settings will be saved for<br>your next visit</p>
-
-                </div>
-                <div class="right-column">
-                    <div id="preview-shadow">
-                        <div id="preview">
-                            <h3 style="margin:0px;">Hi I'm Anjelica &#x1F338</h3>
-                            <p>I am a Senior Computer
-                                Science student at the University of Texas at Dallas!
-                            </p>
-                            <p>Currently working as an undergraduate researcher and game dev intern.</p>
-                        </div>
-
-                        <div class="contact">
-                            <h5 style="margin: 5px; text-align: center;">Let's get in touch! &#x1F4E7</h5>
-                            <div class="contact-button">
-                                <button><a target="_blank" href="mailto: aga170330@utdallas.edu">Email</a></button>
-                                <button><a target="_blank" href="https://www.linkedin.com/in/anjelica-avorque/"">LinkedIn</a></button>
-                                <button><a target=" _blank" href="https://github.com/evanjelica">Github</a></button>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!--About Me section-->
-    <section class="s2">
-        <a name="aboutme"></a>
-        <div class="main-container">
-            <div class="about-wrapper">
-                <div class="about-me">
-                    <h4>&#x1F33F ABOUT &#x1F33F</h4>
-                    <p>As a teen, I had a strong interest towards design and programming. I started my college career
-                        studying both Graphic Design and Computer Science. But as time went on,
-                        I started to focus more on Computer Science. Despite this, my passion for the arts remained and
-                        I continued to do art on the side while studying CS.
-                    </p>
-                    <p>My interest in art and design has drawn me towards web developement and UI/UX Design. I taught
-                        myself how to work with HTML, CSS, React and JavaScript.
-                        A fun learning experience which allowed me to code this very website from scratch.
-                        <br><br>I hope to become a full-stack developer with a focus on UI/UX design!
-                    </p>
-                </div>
-
-                <div class="graphics-porfolio">
-                    <img id="graphics-porf" src="./pics/Art/rize-redraw.png">
-                    <button class="art-button"><a href="pages/art.html">See more of my art here!</a></button>
-
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-
-    <!--Past Projects section -->
-    <section class="s1">
-        <a name="projects"></a>
-        <div class="main-container">
-            <h3 style="text-align: center;">&#x1F538 PROJECTS &#x1F538</h3>
-            <div class="post-wrapper">
-
-                <div>
-                    <div class="post">
-                        <img class="thumbnail" src="./pics/thumbnails/VR.jpg">
-                        <div class="post-preview">
-                            <h5 class="post-title">To The Top!</h5>
-                            <p class="post-intro">&#x2600 UTD MI Lab Summer 2021 Intern Project
-                                <br>A virtual reality 3D building blocks game
-                                <br>Made with Unity and integrated with Leap Motion Ultraleap and Photon.</p>
-                            <a target="_blank" href="https://github.com/multimodal-interaction-lab/To-The-Top">Check out our code!</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div>
-                    <div class="post">
-                        <img class="thumbnail" src="./pics/thumbnails/pet-finder-thumb.jpg">
-                        <div class="post-preview">
-                            <h5 class="post-title">Pet Finder</h5>
-                            <p class="post-intro">Coded in an Agile team of four students for Codubee's
-                                Spring 2021 cohort.<br>An interactive web app that allows users match with potential pets from
-                                animal shelters.</p>
-                            <a target="_blank" href="https://github.com/Codubee/PetFinderMW3-4">Check out our code!</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div>
-                    <div class="post">
-                        <img class="thumbnail" src="./pics/thumbnails/Environeers.png">
-                        <div class="post-preview">
-                            <h5 class="post-title">Environeers</h5>
-                            <p class="post-intro">&#x1F4CD Freetail Hacker Learnathon 2021<br>A web app that let's you
-                                earn points by completing tasks that help the environment.<br>&#x2728 Won Best Design
-                                &#x2728</p>
-                            <a target="_blank" href="https://devpost.com/software/environeers">Check out our
-                                Devpost!</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div>
-                    <div class="post">
-                        <img class="thumbnail" src="./pics/thumbnails/Squirrel-Pantry.PNG">
-                        <div class="post-preview">
-                            <h5 class="post-title">Squirrel Pantry</h5>
-                            <p class="post-intro">&#x1F4CD HackUTD Seven Seas 2021<br> A mobile responsive website made in order to
-                                assist those who were affected by the 2021 Texas Snow Storm. Features an interactive
-                                chatbot and Google Maps.</p>
-                            <a target="_blank" href="https://devpost.com/software/squirrel-pantry">Check out our
-                                Devpost!</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div>
-                    <div class="post">
-                        <img class="thumbnail" src="./pics/thumbnails/explore-cities-thumb.png">
-                        <div class="post-preview">
-                            <h5 class="post-title">Explore Cities</h5>
-                            <p class="post-intro">Coded in an Agile team of five students during Codubee's Fall 2020
-                                cohort.<br>An interactive web app that allows users to input their zipcode to find
-                                nearby cities to explore!</p>
-                            <a target="_blank" href="https://github.com/Codubee/ExploreCitiesMW4-6">Check out our
-                                code!</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div>
-                    <div class="post">
-                        <img class="thumbnail" src="./pics/thumbnails/PP-Menu-BG-cover.png">
-                        <div class="post-preview">
-                            <h5 class="post-title">Pumpkin Princess</h5>
-                            <p class="post-intro">&#x1F4CD HackUTD GameJam 2020<br>A 2D sidescrolling
-                                platformer.<br>Ranked 7th out of 124 teams and<br>&#x2728 Won Best Design &#x2728 </p>
-                            <a href="pages/gamejam.html">See concept art</a><br>
-                            <a target="_blank" href="https://matthewsvu.itch.io/pumpkin-princess-123">Click to play</a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section class="s1">
-        <a name="timeline"></a>
-
-
-
-    </section>
-
-    <footer class="s2">
-        <p class="footer-text" style="text-align: center; font-style: italic;">"The creation of a single world comes from a huge number of
-            fragments."
-            <br>- Hayao Miyazaki
-        </p>
-        <p class="footer-text" style="text-align: center; font-size: 13px;">© 2021-present Anjelica Avorque. All rights reserved.</p>
-    </footer>
-
-    <!-- Scripts -->
-    <!-- Change theme colors-->
-    <script type="text/javascript" src="./scripts/themeScript.js"></script>
-    <!-- Implements scroll to top button-->
-    <script type="text/javascript" src="./scripts/scrollTop.js"></script>
-
+<script></script>
 </body>
 
 </html>
