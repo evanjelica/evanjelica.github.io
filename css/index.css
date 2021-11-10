@@ -21,7 +21,7 @@
 }
 
 /*---------------------------------------------------------------------------
-    Handwave animation
+    Animation keyframes
 ----------------------------------------------------------------------------*/
 .wave{
     animation-name: wave-animation;
@@ -41,6 +41,23 @@
     100% {transform: rotate(-8deg)}
 }
 
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes fadeOut{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
 /*---------------------------------------------------------------------------
     Global Styling
 ----------------------------------------------------------------------------*/
@@ -71,7 +88,7 @@ body{
     overflow-x: hidden;
     -webkit-tap-highlight-color: transparent;
 
-    padding: 5vh 15px;
+    padding: 35px 15px;
 }
 body .hide-scrolling{
     overflow-y: hidden;
@@ -109,14 +126,24 @@ ul{
 section{
     background-color: var(--white-alpha-25);
     border: 1px solid var(--white-alpha-40);
-    min-height: 90vh;
+    min-height: calc(100vh - 70px);
     border-radius: 30px;
     backdrop-filter: var(--background-filter-blur);
+    display: none;
 }
+section.active{
+    display: block;
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+section.fade-out{
+    animation: fadeOut 0.5s ease-in-out forwards;
+}
+
 .main{
     max-width: 1200px;
     margin: auto;
     transition: all 0.5s ease-in-out;
+    position: relative;
 }
 .main.fade-out{
     opacity: 0.05;
@@ -152,7 +179,9 @@ section{
     font-size: 40px;
 
 }
-
+.hidden{
+    display: none !important;
+}
 
 /*---------------------------------------------------------------------------
     Buttons
@@ -213,9 +242,28 @@ section{
 }
 
 
+
 /*---------------------------------------------------------------------------
     Navbar
 ----------------------------------------------------------------------------*/
+.header{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    padding: 20px 0 0 ;
+}
+.header.active{
+    position: fixed;
+    top: 35px;
+    padding: 20px 15px;
+}
+.header.active .container{
+    max-width: 1200px;
+    margin: auto;
+}
+
 .header .nav-toggler{
     height: 50px;
     width: 50px;
@@ -224,16 +272,24 @@ section{
     background-color: var(--white-alpha-25);
     border: 1px solid var(--white-alpha-40);
     border-radius: 50%;
+
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0 15px;
+    z-index: 1;
 }
 .header .nav-toggler span{
     height: 2px;
     width: 24px;
     background-color: var(--main-color);
     position: relative;
+    transition: background-color 0.3s ease;
 }
+.header.active .nav-toggler span{
+    background-color: transparent;
+}
+
 .header .nav-toggler span::before,
 .header .nav-toggler span::after{
     content: '';
@@ -244,12 +300,88 @@ section{
     background-color: var(--main-color);
 }
 
+.header .nav-toggler span::before{
+    left: 0;
+    transform: translateY(-8px);
+}
+.header.active .nav-toggler span::before{
+    transform: rotate(45deg);
+}
+
+.header .nav-toggler span::after{
+    right: 0;
+    transform: translateY(8px);
+}
+.header.active .nav-toggler span::after{
+    transform: rotate(-45deg);
+}
+
+.header:not(.active) .nav-toggler:hover span::before,
+.header:not(.active) .nav-toggler:hover span::after{
+    width: 50%;
+}
+
+/*---------------------------------------------------------------------------
+    Navbar Menu
+----------------------------------------------------------------------------*/
+.header .nav{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    padding: 40px 20px;
+    overflow-y: auto;
+    visibility: hidden;
+}
+.header.active .nav{
+    visibility: visible;
+}
+
+.header .nav-inner{
+    min-height: calc(100vh - 70px);
+    background-color: #cddc39;
+    max-width: 1200px;
+    margin: auto;
+    background-color: var(--white-alpha-25);
+    border: 1px solid var(--white-alpha-40);
+    background-filter: var(--background-filter-blur);
+    padding: 50px 0;
+    border-radius: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+.header.active .nav-inner{
+    opacity: 1;
+}
+
+.header .nav-inner ul li{
+    text-align: center;
+}
+.header .nav-inner ul li a{
+    font-size: 40px;
+    color: var(--blue-dark);
+    display: block;
+    font-weight: 450;
+    padding: 8px 15px;
+    transition: color 0.3 ease;
+}
+.header .nav-inner ul li a:hover{
+    color: var(--main-color);
+}
 /*---------------------------------------------------------------------------
     Landing Section
 ----------------------------------------------------------------------------*/
 .landing{
-    display: flex;
     padding: 120px 0;
+}
+.landing.active{
+    display: flex;
 }
 
 .landing-text,.landing-img{
@@ -271,14 +403,19 @@ section{
 }
 
 .landing-img .img-box{
-    max-width: 360px;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
     border-radius: 50%;
     border: 8px solid var(--white-alpha-25);
     margin: auto;
 }
 .landing-img .img-box img{
-    width: 100%;
+    width: auto;
+    height: 100%;
+    object-fit: cover;
     border-radius: 50%;
+    
 }
 /*------------------------------------------------------------
     Social Media
@@ -321,13 +458,16 @@ section{
     padding: 0 15px;
 }
 .about-img .img-box{
-    max-width: 400px;
+    width: 400px;
+    height: 400px;
     border-radius: 50%;
     border: 8px solid var(--white-alpha-25);
     margin: auto;
 }
 .about-img .img-box img{
-    width: 100%;
+    width: auto;
+    height: 100%;
+    object-fit: cover;
     border-radius: 50%;
 }
 .about-text h3{

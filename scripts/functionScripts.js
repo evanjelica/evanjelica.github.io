@@ -1,4 +1,22 @@
 /*------------------------------------------------------------
+    Toggle Navbar
+-------------------------------------------------------------*/
+const navToggler = document.querySelector(".nav-toggler");
+navToggler.addEventListener("click", ()=>{
+    hideSection();
+    toggleNavbar();
+    document.body.classList.toggle("hide-scrolling");
+});
+
+function hideSection(){
+    document.querySelector("section.active").classList.toggle("fade-out");
+}
+
+function toggleNavbar(){
+    document.querySelector(".header").classList.toggle("active");
+}
+
+/*------------------------------------------------------------
     Switch tabs
 -------------------------------------------------------------*/
 const tabsContainer = document.querySelector(".about-tabs"),
@@ -49,3 +67,5 @@ function portfolioItemsDetails(portfolioItems){
     document.querySelector(".popup-body").innerHTML =
     portfolioItems.querySelector(".portfolio-items-details").innerHTML;
 }
+
+
