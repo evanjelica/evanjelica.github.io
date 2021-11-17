@@ -1,0 +1,13 @@
+:root{
+    --main-color: #5e2fe0;
+    --blue: #0000ff;
+    --blue-dark: #18293c;
+    --orange: #ffa500;
+    --chartreuse: #cddc39;
+    --pastel-pink: #efa2b4;
+    --pastel-blue: #aef1ee;
+    --white: #ffffff;
+    --white-alpha-40: rgba(255, 255, 255, 0.40);
+    --white-alpha-25: rgba(255, 255, 255, 0.25);
+    --background-filter-blur: blur(5px);
+}

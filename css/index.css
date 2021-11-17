@@ -297,6 +297,49 @@ section.fade-out{
     user-select: none;
 }
 
+
+.theme-button{
+    line-height: 1.5;
+    background-color: var(--white-alpha-25);
+    border: 1px solid var(--white-alpha-40);
+    padding: 10px 28px;
+    display: inline-block;
+    border-radius: 30px;
+    color: var(--main-color);
+    font-weight: 500;
+    font-family: inherit;
+    font-size: 16px;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    overflow: hidden;
+    vertical-align: middle;
+    transition: width 0.3s ease;
+
+}
+.theme-button::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0%;
+    background-color: var(--main-color);
+    z-index: -1;
+    transition: width 0.3s ease;
+}
+.theme-button:hover::before{
+    width: 100%;
+}
+.theme-button:hover{
+    color: var(--white);
+}
+
+.button-tab{
+    font-family: inherit;
+    user-select: none;
+}
+
 /*---------------------------------------------------------------------------
     Custom Scrollbar
 ----------------------------------------------------------------------------*/
@@ -815,10 +858,7 @@ section.fade-out{
     .landing-img{
         order: -1;
     }
-    .landing-img, .img-box{
-        max-width: 300px;
-        max-height: 300px;
-    }
+
 }
 @media(max-width: 767px){
 
