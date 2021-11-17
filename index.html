@@ -23,9 +23,26 @@
 
 <body>
 
+    <!-- Background circles Start-------------------------------------------------------------------->
+    <div class="bg-circles">
+        <div class="circles-1"></div>
+        <div class="circles-2"></div>
+        <div class="circles-3"></div>
+        <div class="circles-4"></div>
+        <div class="circles-5"></div>
+
+    </div>
+    <!-- Background circles End-------------------------------------------------------------------->
+
+
+    <!-- Overlay Start --------------------------------------------------------------------->
+    <div class="overlay">
+    </div>
+    <!-- Overlay End --------------------------------------------------------------------->
+
+
     <div class="main">
 
-        
         <!--Header/Navbar-start--------------------------------------------------------------------->
         <header class="header">
             <div class="container">
@@ -37,10 +54,10 @@
                     <nav class="nav">
                         <div class="nav-inner">
                             <ul>
-                                <li><a href="#" class="nav-item">home</a></li>
-                                <li><a href="#" class="nav-item">about</a></li>
-                                <li><a href="#" class="nav-item">portfolio</a></li>
-                                <li><a href="#" class="nav-item">contact</a></li>
+                                <li><a href="#home" class="nav-item link-item">home</a></li>
+                                <li><a href="#about" class="nav-item link-item">about</a></li>
+                                <li><a href="#projects" class="nav-item link-item">projects</a></li>
+                                <li><a href="#" class="nav-item link-item">contact</a></li>
                             </ul>
                         </div>
                     </nav>
@@ -52,15 +69,15 @@
 
 
         <!--Landing-begin-------------------------------------------------------------------------->
-        <section class="landing align-items-center active">
+        <section class="landing align-items-center active" id="home">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="landing-text">
                         <p>Hello I'm</p>
                         <h1>Anjelica <span class="wave">&#x1F44B</span></h1>
                         <h2>A Computer Science major and </br>UI/UX Design enthusiast</h2>
-                        <a href ="#" class="button">about me</a>
-                        <a href ="#" class="button">projects</a>
+                        <a href ="#about" class="button link-item">about me</a>
+                        <a href ="#projects" class="button link-item">projects</a>
 
                         <div class="contact-items">
                            <h3>Contacts</h3>
@@ -85,7 +102,7 @@
 
 
         <!--About-begin--------------------------------------------------------------------------->
-        <section class="about sec-padding">
+        <section class="about sec-padding" id="about">
             <div class="container">
                 <div class="row">
                     <div class="section-title">
@@ -186,7 +203,7 @@
 
                             <!--Download CV-->
                             <a target="_blank" href="Anjelica_Avorque_Resume.pdf" class="button">download cv</a>
-                            <a href="#" class="button">contact me</a>
+                            <a href="#contact" class="button link-item">contact me</a>
 
                     </div>
                 </div>
@@ -198,7 +215,7 @@
 
 
         <!--Portfolio-begin---------------------------------------------------------------------->
-        <section class="portfolio sec-padding">
+        <section class="portfolio sec-padding" id="projects">
             <div class="container">
                 <div class="row">
                     <div class="section-title">
@@ -206,6 +223,32 @@
                     </div>
                 </div>
                 <div class="row">
+
+                     <!--Portfolio item-begin-->
+                     <div class="portfolio-items">
+                        <div class="portfolio-items-thumbnail">
+                            <img src="pics/thumbnails/trailquility.png" alt="Trailquility">
+                        </div>
+                        <h3 class="portfolio-items-title">trailquility.</h3>
+                        <button type="button" class="button button-view-project">View project</button>
+                        <div class="portfolio-items-details">
+                            <div class="description">
+                                <p> Entry for Capital One Software Engineering Summit 2021
+                                </br> A React web app that utilizes the National Park Service API. Allows users to search up information regarding national parks!
+                                </p>
+                            </div>
+                            <div class="project-info">
+                                <ul>
+                                    <li>Date: <span>November 2021</span></li>
+                                    <li>Technology Used: <span>React, JavaScript, CSS, Git, Vercel, National Park Service API</span></li>
+                                    <a target="_blank" href="https://github.com/evanjelica/trailquility" class="button">View repo</a>
+                                    <a target="_blank" href="https://trailquility.vercel.app/" class="button">View deployed site</a>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Portfolio item-end-->
 
                     <!--Portfolio item-begin-->
                     <div class="portfolio-items">

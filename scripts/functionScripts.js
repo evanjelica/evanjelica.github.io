@@ -15,9 +15,35 @@ function hideSection(){
 function toggleNavbar(){
     document.querySelector(".header").classList.toggle("active");
 }
+/*------------------------------------------------------------
+    Show active page
+-------------------------------------------------------------*/
+document.addEventListener("click", (e) =>{
+    if(e.target.classList.contains("link-item") && e.target.hash !== ""){
+        //Turns on overlay to prevent multiple clicks
+        document.querySelector(".overlay").classList.add("active");
+        navToggler.classList.add("hide");
+        if(e.target.classList.contains("nav-item")){
+            toggleNavbar();
+        }
+    else{
+        hideSection();
+        document.body.classList.add("hide-scrolling");
+
+    }
+    setTimeout(()=>{
+        document.querySelector("section.active").classList.remove("active","fade-out");
+        document.querySelector(e.target.hash).classList.add("active");
+        window.scrollTo(0,0);
+        document.body.classList.remove("hide-scrolling");
+        navToggler.classList.remove("hide");
+        document.querySelector(".overlay").classList.remove("active");
+    },500);
+    }
+});
 
 /*------------------------------------------------------------
-    Switch tabs
+    Switch about tabs
 -------------------------------------------------------------*/
 const tabsContainer = document.querySelector(".about-tabs"),
 aboutSection = document.querySelector(".about");

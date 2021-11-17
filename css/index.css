@@ -58,6 +58,23 @@
         opacity: 0;
     }
 }
+
+@keyframes zoomInOut{
+    0%,100%{
+        transform: scale(0.5);
+    }
+    50%{
+        transform: scale(1);
+    }
+}
+@keyframes bounceTop{
+    0%,100%{
+        transform: translateY(-50px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+}
 /*---------------------------------------------------------------------------
     Global Styling
 ----------------------------------------------------------------------------*/
@@ -167,6 +184,58 @@ section.fade-out{
 }
 
 /*---------------------------------------------------------------------------
+    Background Circles
+----------------------------------------------------------------------------*/
+.bg-circles{
+    position: fixed;
+    top: 0;
+    height: 100%;
+    max-width: 1200px;
+    width: calc(100% - 30px);
+    left: 50%;
+    transform: translateX(-50%);
+}
+.bg-circles div{
+    position: absolute;
+    border-radius: 50%;
+}
+.bg-circles .circles-1{
+    height: 70px;
+    width: 70px;
+    background-color: var(--blue);
+    left: 6%;
+    top: 10%;
+    opacity: 0.4;
+    animation: zoomInOut 9s linear infinite;
+}
+.bg-circles .circles-2{
+    height: 90px;
+    width: 90px;
+    background-color: var(--main-color);
+    left: 30%;
+    top: 50%;
+    opacity: 0.6;
+    animation: bounceTop 6s ease-in-out infinite;
+}
+.bg-circles .circles-3{
+    height: 120px;
+    width: 120px;
+    background-color: var(--white);
+    top: 40%;
+    right: -60px;
+    opacity: 0.4;
+    animation: bounceTop 3s ease-in-out infinite;
+}
+.bg-circles .circles-4{
+    height: 80px;
+    width: 80px;
+    background-color: var(--orange);
+    top: 80%;
+    left: -30px;
+    opacity: 0.6;
+    animation: zoomInOut 9s ease-in-out infinite;
+}
+/*---------------------------------------------------------------------------
     Section Title
 ----------------------------------------------------------------------------*/
 .section-title{
@@ -241,8 +310,22 @@ section.fade-out{
     background-color: var(--main-color);
 }
 
-
-
+/*---------------------------------------------------------------------------
+    Overlay
+----------------------------------------------------------------------------*/
+.overlay{
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    z-index: 200;
+    visibility: hidden;
+}
+.overlay.active{
+    visibility: visible;
+}
 /*---------------------------------------------------------------------------
     Navbar
 ----------------------------------------------------------------------------*/
@@ -278,6 +361,12 @@ section.fade-out{
     justify-content: center;
     margin: 0 15px;
     z-index: 1;
+
+    transition: opacity 0.5% ease-in-out;
+}
+.header .nav-toggler .hide{
+    opacity: 0;
+    transition: none;
 }
 .header .nav-toggler span{
     height: 2px;
