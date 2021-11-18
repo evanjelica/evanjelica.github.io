@@ -235,6 +235,15 @@ section.fade-out{
     opacity: 0.6;
     animation: zoomInOut 9s ease-in-out infinite;
 }
+.bg-circles .circles-5{
+    height: 200px;
+    width: 200px;
+    background-color: var(--chartreuse);
+    top: 50%;
+    left: 50%;
+    opacity: 0.6;
+    animation: zoomInOut 9s ease-in-out infinite;
+}
 /*---------------------------------------------------------------------------
     Section Title
 ----------------------------------------------------------------------------*/
