@@ -94,4 +94,36 @@ function portfolioItemsDetails(portfolioItems){
     portfolioItems.querySelector(".portfolio-items-details").innerHTML;
 }
 
+/*------------------------------------------------------------
+    Dark Mode
+-------------------------------------------------------------*/
+let theme =localStorage.getItem('theme')
+if(theme == null){
+    setTheme('default')
+}
+else{
+    setTheme(theme)
+}
 
+let themeDots = document.getElementsByClassName('theme-button')
+
+for(var i=0; themeDots.length > i; i++){
+    themeDots[i].addEventListener('click', function(){
+        let mode = this.dataset.mode
+        console.log('clicked: ', mode)
+
+        setTheme(mode)
+    })
+}
+
+function setTheme(mode){
+    if(mode == 'default'){
+        document.getElementById('theme-style').href = './css/index.css'
+    }
+    if(mode == 'darkmode'){
+        document.getElementById('theme-style').href = './css/darkmode.css'
+    }
+ 
+
+    localStorage.setItem('theme', mode)
+}
