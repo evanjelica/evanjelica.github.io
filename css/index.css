@@ -7,11 +7,12 @@
     Variables
 -----------------------------------------------------------------------------*/
 :root{
-    --main-color: #e02f6b;
+    --main-color: #3f1cbe;
     --blue: #0051ff;
     --blue-dark: #18293c;
     --orange: #ffb937;
     --periwinkle: #8671ff;
+    --pink: #e02f6b;
     --pastel-pink: #efa2b4;
     --pastel-blue: #aef1ee;
     --white: #ffffff;
@@ -199,7 +200,7 @@ section.fade-out{
 .bg-circles .circles-2{
     height: 90px;
     width: 90px;
-    background-color: var(--main-color);
+    background-color: var(--pink);
     left: 30%;
     top: 50%;
     opacity: 0.6;
