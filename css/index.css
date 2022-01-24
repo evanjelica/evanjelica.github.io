@@ -8,10 +8,10 @@
 -----------------------------------------------------------------------------*/
 :root{
     --main-color: #e02f6b;
-    --blue: #0000ff;
+    --blue: #0051ff;
     --blue-dark: #18293c;
-    --orange: #ffa500;
-    --chartreuse: #cddc39;
+    --orange: #ffb937;
+    --periwinkle: #8671ff;
     --pastel-pink: #efa2b4;
     --pastel-blue: #aef1ee;
     --white: #ffffff;
@@ -109,18 +109,6 @@ body{
 }
 body .hide-scrolling{
     overflow-y: hidden;
-}
-/*Adds tinted overlay on background*/
-body::before{
-    content: '';
-    position: fixed;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background-color: var(--chartreuse);
-    z-index: -1;
-    opacity: 0.3;
 }
 
 a{
@@ -238,7 +226,7 @@ section.fade-out{
 .bg-circles .circles-5{
     height: 200px;
     width: 200px;
-    background-color: var(--chartreuse);
+    background-color: var(--periwinkle);
     top: 50%;
     left: 50%;
     opacity: 0.6;
