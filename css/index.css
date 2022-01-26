@@ -8,13 +8,13 @@
 -----------------------------------------------------------------------------*/
 :root{
     --main-color: #3f1cbe;
-    --blue: #0051ff;
+    --blue: #0084ff;
     --blue-dark: #18293c;
     --orange: #ffb937;
-    --periwinkle: #8671ff;
+    --periwinkle: #8a92ff;
     --pink: #e02f6b;
     --pastel-pink: #efa2b4;
-    --pastel-blue: #aef1ee;
+    --pastel-blue: #7ce0ff;
     --white: #ffffff;
     --white-alpha-40: rgba(255, 255, 255, 0.40);
     --white-alpha-25: rgba(255, 255, 255, 0.25);
@@ -211,7 +211,7 @@ section.fade-out{
     width: 120px;
     background-color: var(--white);
     top: 40%;
-    right: -60px;
+    right: -10px;
     opacity: 0.4;
     animation: bounceTop 3s ease-in-out infinite;
 }
@@ -230,6 +230,24 @@ section.fade-out{
     background-color: var(--periwinkle);
     top: 50%;
     left: 50%;
+    opacity: 0.6;
+    animation: zoomInOut 9s ease-in-out infinite;
+}
+.bg-circles .circles-6{
+    height: 150px;
+    width: 150px;
+    background-color: var(--blue);
+    top: 70%;
+    left: 15%;
+    opacity: 0.6;
+    animation: bounceTop 10s ease-in-out infinite;
+}
+.bg-circles .circles-7{
+    height: 100px;
+    width: 100px;
+    background-color: var(--orange);
+    top: 10%;
+    left: 80%;
     opacity: 0.6;
     animation: zoomInOut 9s ease-in-out infinite;
 }
